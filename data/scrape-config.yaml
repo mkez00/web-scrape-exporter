@@ -1,0 +1,41 @@
+---
+- job: web_scrape
+  scrapes:
+  - url: https://s3.amazonaws.com/mk-testing-stuff-1/metric.html
+    instance: metric
+    timeout: 20000
+    extracts:
+    - selector: div[class=money]
+      metric_name: cost
+      metric_help: Cost of item
+      metric_type: gauge
+    - selector: div[class=header23]
+      integer: true
+      inner_html: true
+      metric_name: purchased
+      metric_help: Number of units purchased
+      metric_type: counter
+    - selector: div[class=header26]
+      inner_html: true
+      metric_name: temperature
+      metric_help: Temperature metric
+      metric_type: gauge
+  - url: https://s3.amazonaws.com/mk-testing-stuff-1/metric2.html
+    instance: metric2
+    timeout: 20000
+    extracts:
+    - selector: div[class=money]
+      metric_name: cost
+      metric_help: Cost of item
+      metric_type: gauge
+    - selector: div[class=header23]
+      integer: true
+      inner_html: true
+      metric_name: purchased
+      metric_help: Number of units purchased
+      metric_type: counter
+    - selector: div[class=header26]
+      inner_html: true
+      metric_name: temperature
+      metric_help: Temperature metric
+      metric_type: gauge
