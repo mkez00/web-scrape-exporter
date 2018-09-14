@@ -25,7 +25,7 @@ temperature{job="web_scrape",instance="metric2"} -122.35
 
 After configuring Prometheus to scrape metrics from this exporter:
 
-![alt text](https://github.com/mkez00/web-scrape-exporter/blob/master/data/prom-dash.png)
+![alt text](https://github.com/mkez00/web-scrape-exporter/blob/master/data/prom-dash2.png)
 
 Docker
 -
