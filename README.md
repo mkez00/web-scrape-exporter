@@ -1,6 +1,8 @@
 Web Scrape Prometheus Exporter
 -
 
+[![DepShield Badge](https://depshield.sonatype.org/badges/mkez00/web-scrape-exporter/depshield.svg)](https://depshield.github.io)
+
 A Prometheus Exporter for web scrapes.  This service uses an HTML parser (Jsoup) and scrapes metrics from the HTML returned from a specified URL.  These metrics will then be formatted and served for Prometheus scraping.
 
 Example
